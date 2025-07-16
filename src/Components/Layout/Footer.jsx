@@ -30,16 +30,13 @@ function Footer() {
                 TV Shows
               </a>
             </li>
-            <li>
-              <a href="#" className="hover:text-white transition">
-                Register
-              </a>
-            </li>
           </ul>
         </div>
-
+    
         <div>
-          <h2 className="text-xl font-semibold mb-4 text-white">Follow Us</h2>
+          <h2 className="text-xl font-semibold mb-4 text-white">
+            Follow Us for more information
+          </h2>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-white text-xl">
               <FaFacebook />

@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom"; // ✅ Correct import
 
 const TMDB_API_KEY = "2ca22f700bb9eff7e814bfbe16ba6831";
 const BASE_URL = "https://api.themoviedb.org/3";
@@ -26,23 +27,26 @@ const MovieSeries = () => {
       {data.length === 0 ? (
         <p>No movies found</p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4">
           {data.map((movie) => (
-            <div key={movie.id} className="bg-gray-800 p-2 rounded shadow-md hover:transform hover:scale-105 transition-transform duration-200 cursor-pointer">
-              <img
-                src={`${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`}
-                alt={movie.title}
-                className="bg-cover rounded w-full"
-              />
-              <h2 className="text-white mt-2 text-sm font-medium">
-                {movie.title}
-              </h2>
-              <p className="text-sm text-gray-200">{movie.release_date}</p>
-              <p className="text-xs text-amber-400 font-bold flex space-x-2 items-center"><FaStar/>  <span>{movie.vote_average.toFixed(1)}</span></p>
-               <p className="text-gray-400 text-xs">
-                Genres: {movie.genre_ids.join(', ')}
-              </p>
-            </div>
+            <Link to={`/movie/${movie.id}`} key={movie.id}>
+              <div className="bg-gray-600 p-2 rounded shadow-md hover:transform hover:scale-x-105 transition-transform duration-200 cursor-pointer">
+                <img
+                  src={`${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`}
+                  alt={movie.title}
+                  className="bg-cover rounded w-full"
+                />
+                <h2 className="text-white mt-2 text-sm font-medium">{movie.title}</h2>
+                <p className="text-sm text-gray-200">{movie.release_date}</p>
+                <p className="text-xs text-amber-400 font-bold flex space-x-2 items-center">
+                  <FaStar />
+                  <span>{movie.vote_average.toFixed(1)}</span>
+                </p>
+                {/* <p className="text-gray-200 text-xs">
+                  Genres: {movie.genre_ids.join(", ")}
+                </p> */}
+              </div>
+            </Link>
           ))}
         </div>
       )}

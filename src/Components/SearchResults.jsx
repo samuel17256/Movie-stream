@@ -38,7 +38,7 @@ function SearchResults({ results, loading, query }) {
         {results.map((item) => (
           <li
             key={item.id}
-            className="text-sm hover:transform hover:scale-105 transition-transform duration-200"
+            className="text-sm hover:transform hover:scale-105 transition-transform duration-200 bg-gray-800 p-4 rounded"
           >
             <div className="cursor-pointer">
               {item.poster_path ? (

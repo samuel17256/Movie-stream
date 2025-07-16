@@ -12,7 +12,7 @@ function Hero() {
         <div className="text-center text-gray-100 px-6">
           <h2 className="text-3xl font-semibold">Welcome to NanStream</h2>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Unlimited <span className="text-red-600">Movies</span>, Anytime.
+            Unlimited <span className="text-red-600">Movies, Tv shows</span><br /> Anytime.
           </h1>
           <p className="text-lg md:text-xl mb-6 max-w-xl mx-auto">
             Discover epic stories, thrilling adventures, and heart-stopping dramas, all streaming in stunning HD.

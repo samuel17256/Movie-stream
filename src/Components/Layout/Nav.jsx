@@ -36,7 +36,7 @@ function Nav() {
           <li><a href="/" className="hover:text-gray-300 transition">Home</a></li>
           <li><a href="/movie" className="hover:text-gray-300 transition">Movies</a></li>
           <li><a href="/tv-shows" className="hover:text-gray-300 transition">TV Shows</a></li>
-          <li><a href="/my-list" className="hover:text-gray-300 transition">My List</a></li>
+          <li><a href="#" className="hover:text-gray-300 transition">My List</a></li>
         </ul>
 
         <form
