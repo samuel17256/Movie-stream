@@ -1,0 +1,32 @@
+import React from "react";
+
+function Hero() {
+  return (
+    <div
+      className="relative bg-cover min-h-screen"
+      style={{
+        backgroundImage: `url('./AAAA.jpg')`,
+      }}
+    >
+      <div className="absolute bg-black/70 inset-0 flex items-center justify-center">
+        <div className="text-center text-gray-100 px-6">
+          <h2 className="text-3xl font-semibold">Welcome to NanStream</h2>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Unlimited <span className="text-red-600">Movies</span>, Anytime.
+          </h1>
+          <p className="text-lg md:text-xl mb-6 max-w-xl mx-auto">
+            Discover epic stories, thrilling adventures, and heart-stopping dramas, all streaming in stunning HD.
+          </p>
+          <a
+            href="#"
+            className="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md text-lg transition"
+          >
+            Start Watching
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Hero;
