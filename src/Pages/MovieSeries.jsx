@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { FaStar } from "react-icons/fa";
-import { Link } from "react-router-dom"; // ✅ Correct import
+import { Link } from "react-router-dom"; 
 
 const TMDB_API_KEY = "2ca22f700bb9eff7e814bfbe16ba6831";
 const BASE_URL = "https://api.themoviedb.org/3";

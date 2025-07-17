@@ -1,7 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const TMDB_API_KEY = "2ca22f700bb9eff7e814bfbe16ba6831";
 
 function SearchResults({ results, loading, query }) {
   if (loading) {
@@ -30,7 +29,7 @@ function SearchResults({ results, loading, query }) {
   }
 
   return (
-    <div className="bg-white text-black px-4 py-4 max-w-7xl mx-auto">
+    <div className=" text-black px-4 py-4 max-w-7xl mx-auto">
       <h2 className="text-xl font-semibold mb-2">
         Search Results for "{query}" {results.length} results
       </h2>
@@ -79,6 +78,7 @@ function SearchResults({ results, loading, query }) {
 }
 
 //Function for movie/series search
+const TMDB_API_KEY = "2ca22f700bb9eff7e814bfbe16ba6831";
 
 function SearchPage() {
   const [searchParams] = useSearchParams();

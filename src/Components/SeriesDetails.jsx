@@ -9,7 +9,7 @@ const POSTER_SIZE = "w500";
 const SeriesDetails = () => {
   const { id } = useParams();
 
-  const seriesDetailURL = `${BASE_URL}/tv/${id}?api_key=${TMDB_API_KEY}&language=en-US`; // ✅ FIXED
+  const seriesDetailURL = `${BASE_URL}/tv/${id}?api_key=${TMDB_API_KEY}&language=en-US`; 
 
   const { data, isLoading, isError } = useQuery({
     queryKey: ["tv", id],
