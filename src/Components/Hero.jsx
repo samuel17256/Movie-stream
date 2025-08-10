@@ -3,7 +3,6 @@ import video from "/Smart City Digital City Video.mp4";
 function Hero() {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={video}
@@ -13,7 +12,6 @@ function Hero() {
         playsInline
       ></video>
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
         <div className="text-center text-gray-100 px-6">
           <h2 className="text-3xl font-semibold">Welcome to NanStream</h2>

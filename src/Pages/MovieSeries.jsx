@@ -42,9 +42,6 @@ const MovieSeries = () => {
                   <FaStar />
                   <span>{movie.vote_average.toFixed(1)}</span>
                 </p>
-                {/* <p className="text-gray-200 text-xs">
-                  Genres: {movie.genre_ids.join(", ")}
-                </p> */}
               </div>
             </Link>
           ))}

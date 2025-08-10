@@ -55,7 +55,6 @@ function Nav() {
           </button>
         </form>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
           className="md:hidden text-gray-400 hover:text-white text-xl p-2"
